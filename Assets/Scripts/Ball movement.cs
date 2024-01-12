@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Ballmovement : MonoBehaviour
 {
-    float speed = 5;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    [SerializeField]float speed = 5;
+    
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.W))
         {
